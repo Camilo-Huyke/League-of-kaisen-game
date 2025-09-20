@@ -1,0 +1,71 @@
+[gd_scene load_steps=8 format=3 uid="uid://bm6xjsot6j8dw"]
+
+[ext_resource type="Script" uid="uid://cbe8tar8to3m3" path="res://scripts/player/player.gd" id="1_j20qh"]
+[ext_resource type="Script" uid="uid://bx3v32cccgc4k" path="res://scripts/player/camera_player.gd" id="2_01b5d"]
+[ext_resource type="PackedScene" uid="uid://b1rh1s7w5gg3l" path="res://assets/charachters/ogro/cac-1753569798894.tscn" id="3_e714y"]
+[ext_resource type="PackedScene" uid="uid://b3bt1l7bm38i8" path="res://scenes/health_bar.tscn" id="4_01b5d"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_svowc"]
+radius = 2.0
+height = 10.0
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_f7tsm"]
+properties/0/path = NodePath("AuxScene/AnimationPlayer:current_animation")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath("AuxScene:rotation")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+properties/2/path = NodePath(".:pos_server")
+properties/2/spawn = true
+properties/2/replication_mode = 1
+properties/3/path = NodePath(".:curr_state_server")
+properties/3/spawn = true
+properties/3/replication_mode = 1
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_j20qh"]
+viewport_path = NodePath("SubViewport")
+
+[node name="Character_Ogro" type="CharacterBody3D"]
+safe_margin = 0.01
+script = ExtResource("1_j20qh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+shape = SubResource("CapsuleShape3D_svowc")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.559193, 0.829038, 0, -0.829038, 0.559193, 0, 71.4, 48)
+fov = 40.0
+script = ExtResource("2_01b5d")
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+avoidance_enabled = true
+radius = 2.0
+debug_use_custom = true
+debug_path_custom_color = Color(0.253004, 0.63293, 0.388405, 1)
+debug_path_custom_point_size = 10.0
+
+[node name="AuxScene" parent="." instance=ExtResource("3_e714y")]
+
+[node name="Node" parent="AuxScene" index="0"]
+transform = Transform3D(0.06, 0, 0, 0, 0.06, 0, 0, 0, 0.06, 0, 0, 0)
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_f7tsm")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+size = Vector2i(800, 161)
+
+[node name="Health_bar" parent="SubViewport" instance=ExtResource("4_01b5d")]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15.5905, 0)
+billboard = 1
+texture = SubResource("ViewportTexture_j20qh")
+
+[connection signal="synchronized" from="MultiplayerSynchronizer" to="." method="_on_multiplayer_synchronizer_synchronized"]
+
+[editable path="AuxScene"]

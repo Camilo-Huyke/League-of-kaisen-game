@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://cspwxnk1uyd5f"]
+
+[ext_resource type="Script" uid="uid://cvkf7ngbsrme4" path="res://scripts/UI/slot_selection.gd" id="2_wrnv2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cwrh2"]
+bg_color = Color(0.0903478, 0.230229, 0.548713, 1)
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[node name="SlotSelection" type="Panel"]
+custom_minimum_size = Vector2(80, 80)
+offset_right = 80.0
+offset_bottom = 80.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cwrh2")
+script = ExtResource("2_wrnv2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = 1
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 80.0
+expand_mode = 1

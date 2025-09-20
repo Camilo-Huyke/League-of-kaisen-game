@@ -1,0 +1,37 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bns77cds6f6rj"
+path="res://.godot/imported/nightbringer_yasuo_Big_Spikes.png-10f528998b771a0f177953fc9740ff60.ctex"
+metadata={
+"vram_texture": false
+}
+generator_parameters={
+"md5": "52722febcf639b55cb8609e86ad0a3fe"
+}
+
+[deps]
+
+source_file="res://assets/charachters/yasuo/nightbringer_yasuo_Big_Spikes.png"
+dest_files=["res://.godot/imported/nightbringer_yasuo_Big_Spikes.png-10f528998b771a0f177953fc9740ff60.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

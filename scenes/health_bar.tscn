@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=3 uid="uid://b3bt1l7bm38i8"]
+
+[ext_resource type="Texture2D" uid="uid://bsnycosshkbyg" path="res://assets/health-bar/health_bar.png" id="1_1bvlm"]
+[ext_resource type="Script" uid="uid://cvsh84m0jynci" path="res://scripts/health_bar.gd" id="2_y3kqx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y3kqx"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6opq1"]
+bg_color = Color(7.21961e-07, 0.557752, 0.105024, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvlm"]
+bg_color = Color(1, 0.350789, 0.194677, 1)
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(401, 81)
+scale = Vector2(5.97, 5.97)
+texture = ExtResource("1_1bvlm")
+script = ExtResource("2_y3kqx")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+z_index = 1
+offset_left = -42.0
+offset_top = -9.5
+offset_right = 217.0
+offset_bottom = 17.5
+scale = Vector2(0.413518, 0.471151)
+size_flags_horizontal = 8
+theme_override_styles/background = SubResource("StyleBoxFlat_y3kqx")
+theme_override_styles/fill = SubResource("StyleBoxFlat_6opq1")
+step = 1.0
+value = 100.0
+show_percentage = false
+
+[node name="DamageBar" type="ProgressBar" parent="."]
+offset_left = -42.0
+offset_top = -9.5
+offset_right = 217.0
+offset_bottom = 17.5
+scale = Vector2(0.413518, 0.471151)
+size_flags_horizontal = 8
+theme_override_styles/background = SubResource("StyleBoxFlat_y3kqx")
+theme_override_styles/fill = SubResource("StyleBoxFlat_1bvlm")
+step = 1.0
+value = 100.0
+show_percentage = false
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

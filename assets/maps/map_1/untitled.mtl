@@ -1,0 +1,333 @@
+# Blender 4.3.2 MTL File: 'None'
+# www.blender.org
+
+newmtl 材质
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20railRed_04_D.png
+map_d -o 0 -1 0 C:/PGD_M_20railRed_04_D.png
+map_Bump -o 0 -1 0 -bm 1.000000 C:/PGD_M_20railRed_04_N.png
+
+newmtl 材质.1
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20BaseRed_02_D.png
+map_d -o 0 -1 0 C:/PGD_M_20BaseRed_02_D.png
+map_Bump -o 0 -1 0 -bm 0.160000 C:/PGD_M_20BaseRed_02_N.png
+
+newmtl 材质.10
+Ns 452.548309
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd -o 0 -1 0 C:/PVP_M_PGD19_StationRed_01_High_D.png
+map_d -o 0 -1 0 C:/PVP_M_PGD19_StationRed_01_High_D.png
+map_Bump -o 0 -1 0 -bm 1.000000 C:/PVP_M_PGD19_StationRed_01_High_N.png
+
+newmtl 材质.11
+Ns 735.166931
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd -o 0 -1 0 C:/PVP_M_PGD19_StationBlue_01_High_D.png
+map_d -o 0 -1 0 C:/PVP_M_PGD19_StationBlue_01_High_D.png
+map_Bump -o 0 -1 0 -bm 1.000000 C:/PVP_M_PGD19_StationBlue_01_High_N.png
+
+newmtl 材质.13
+Ns 685.934937
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd -o 0 -1 0 C:/PVP_M_PGD19TowerRed_01_High_D.png
+map_d -o 0 -1 0 C:/PVP_M_PGD19TowerRed_01_High_D.png
+map_Bump -o 0 -1 0 -bm 0.150000 C:/PVP_M_PGD19TowerRed_01_High_D.png
+
+newmtl 材质.14
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20BaseGround_01_D.png
+map_d -o 0 -1 0 C:/PGD_M_20BaseGround_01_D.png
+map_Bump -o 0 -1 0 -bm 0.170000 C:/PGD_M_20BaseGround_01_N.png
+
+newmtl 材质.18
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20TerrainRock_03_D.png
+map_d -o 0 -1 0 C:/PGD_M_20TerrainRock_03_D.png
+
+newmtl 材质.19
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20TerrainRock_01_D.png
+map_d -o 0 -1 0 C:/PGD_M_20TerrainRock_01_D.png
+
+newmtl 材质.2
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20RockGroupRed_01_D.png
+map_d -o 0 -1 0 C:/PGD_M_20RockGroupRed_01_D.png
+map_Bump -o 0 -1 0 -bm 1.000000 C:/PGD_M_20RockGroupRed_01_D.png
+
+newmtl 材质.20
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20TerrainRock_02_D.png
+map_d -o 0 -1 0 C:/PGD_M_20TerrainRock_02_D.png
+
+newmtl 材质.21
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20TerrainBorder_01_D.png
+map_d -o 0 -1 0 C:/PGD_M_20TerrainBorder_01_D.png
+
+newmtl 材质.22
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20TerrainRiverBorder_03_D.png
+map_d -o 0 -1 0 C:/PGD_M_20TerrainRiverBorder_03_D.png
+
+newmtl 材质.23
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20TerrainRiver_01_D.png
+map_d -o 0 -1 0 C:/PGD_M_20TerrainRiver_01_D.png
+
+newmtl 材质.26
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20TerrainCenter_01_D.png
+map_d -o 0 -1 0 C:/PGD_M_20TerrainCenter_01_D.png
+
+newmtl 材质.28
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20TerrainRock_01_D.png
+map_d -o 0 -1 0 C:/PGD_M_20TerrainRock_01_D.png
+
+newmtl 材质.29
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20TerrainGrass_01_D.png
+map_d -o 0 -1 0 C:/PGD_M_20TerrainGrass_01_D.png
+
+newmtl 材质.3
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20RockGroupBlue_01_D.png
+map_d -o 0 -1 0 C:/PGD_M_20RockGroupBlue_01_D.png
+map_Bump -o 0 -1 0 -bm 1.000000 C:/PGD_M_20BaseRed_02_N.png
+
+newmtl 材质.4
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20props_02_D.png
+map_d -o 0 -1 0 C:/PGD_M_20props_02_D.png
+map_Bump -o 0 -1 0 -bm 1.000000 C:/PVP_M_PGD19TowerRed_01_High_N.png
+
+newmtl 材质.5
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PTS01_M_02Foliage_01_D.png
+map_d -o 0 -1 0 C:/PTS01_M_02Foliage_01_D.png
+
+newmtl 材质.6
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PTS01_Plant_01_D.png
+map_d -o 0 -1 0 C:/PTS01_Plant_01_D.png
+map_Bump -o 0 -1 0 C:/PTS01_Plant_01_D.png
+
+newmtl 材质.7
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20props_02_D.png
+map_d -o 0 -1 0 C:/PGD_M_20props_02_D.png
+map_Bump -o 0 -1 0 -bm 0.990000 C:/PGD_M_20props_02_D.png
+
+newmtl 材质.8
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PTS01_M_02Foliage_01_D.png
+map_d -o 0 -1 0 C:/PTS01_M_02Foliage_01_D.png
+map_Bump -o 0 -1 0 -bm 1.000000 C:/PTS01_M_02Foliage_01_D.png
+
+newmtl 材质.9
+Ns 319.999939
+Ka 0.780000 0.780000 0.780000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd -o 0 -1 0 C:/PVP_M_PGD19TowerBlue_01_High_D.png
+map_d -o 0 -1 0 C:/PVP_M_PGD19TowerBlue_01_High_D.png
+map_Bump -o 0 -1 0 -bm 0.150000 C:/PVP_M_PGD19TowerBlue_01_High_D.png
+
+newmtl 熊--
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PVPMonster_bear_D_256.png
+map_d -o 0 -1 0 C:/PVPMonster_bear_D_256.png
+map_Bump -o 0 -1 0 -bm 0.580000 C:/PVPMonster_bear_D_256.png
+
+newmtl 红小炮兵
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/Mst_Truck1_D_256.png
+map_d -o 0 -1 0 C:/Mst_Truck1_D_256.png
+map_Bump -o 0 -1 0 -bm 0.600000 C:/Mst_Truck1_D_256.png
+
+newmtl 蓝小炮兵
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/Mst_Truck2_D_256.png
+map_d -o 0 -1 0 C:/Mst_Truck2_D_256.png
+map_Bump -o 0 -1 0 -bm 0.680000 C:/Mst_Truck2_D_256.png
+
+newmtl 蓝方基地主体
+Ns 319.999939
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PGD_M_20BaseBlue_01_D.png
+map_d -o 0 -1 0 C:/PGD_M_20BaseBlue_01_D.png
+map_Bump -o 0 -1 0 -bm 0.160000 C:/PGD_M_20BaseBlue_01_N.png
+
+newmtl 野怪-红buff
+Ns 259.920807
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PVPMonster_RedBaba_D_256.png
+map_d -o 0 -1 0 C:/PVPMonster_RedBaba_D_256.png
+map_Bump -o 0 -1 0 -bm 0.610000 C:/PVPMonster_RedBaba_D_256.png
+
+newmtl 野怪-青蛙
+Ns 422.242493
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PVPMonster_ Lizard_D_256.png
+map_d -o 0 -1 0 C:/PVPMonster_ Lizard_D_256.png
+map_Bump -o 0 -1 0 -bm 0.550000 C:/PVPMonster_ Lizard_D_256.png
+
+newmtl 野怪-鸟
+Ns 557.152344
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/PVPMonster_Bird_D_256.png
+map_d -o 0 -1 0 C:/PVPMonster_Bird_D_256.png
+map_Bump -o 0 -1 0 -bm 0.660000 C:/PVPMonster_Bird_D_256.png
+
+newmtl 野怪-鹿
+Ns 342.967529
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd -o 0 -1 0 C:/Mst_Deer1_D1_256.png
+map_d -o 0 -1 0 C:/Mst_Deer1_D1_256.png
+map_Bump -o 0 -1 0 -bm 0.620000 C:/Mst_Deer1_D1_256.png

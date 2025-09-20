@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=3 uid="uid://un8devna7mgf"]
+
+[ext_resource type="PackedScene" uid="uid://cspwxnk1uyd5f" path="res://scenes/SlotSelection.tscn" id="1_dyftk"]
+[ext_resource type="Script" uid="uid://ctmq0p0ffmntu" path="res://scripts/UI/selection_screen.gd" id="1_syhfi"]
+[ext_resource type="Texture2D" uid="uid://4xe68lekekvc" path="res://assets/photo_character_selection/Yasuo.png" id="2_ednkh"]
+[ext_resource type="Texture2D" uid="uid://d2orhpasd1rd1" path="res://assets/photo_character_selection/Ogro.png" id="3_2nlgg"]
+[ext_resource type="Texture2D" uid="uid://c0vmgjpi3hkuh" path="res://assets/photo_character_selection/Zed.png" id="5_ddptc"]
+
+[node name="SelectionScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_syhfi")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -91.0
+offset_top = -26.5
+offset_right = 91.0
+offset_bottom = 26.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Selecciona un campeon
+"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 40
+
+[node name="SlotSelection" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_dyftk")]
+layout_mode = 2
+image_texture = ExtResource("2_ednkh")
+character_path = "res://scenes/characteres/character_yasuo.tscn"
+
+[node name="SlotSelection2" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_dyftk")]
+layout_mode = 2
+image_texture = ExtResource("3_2nlgg")
+character_path = "res://scenes/characteres/character_ogro.tscn"
+
+[node name="SlotSelection3" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_dyftk")]
+layout_mode = 2
+image_texture = ExtResource("5_ddptc")
+character_path = "res://scenes/characteres/character_zed.tscn"
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Start"
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
