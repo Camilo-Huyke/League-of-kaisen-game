@@ -31,6 +31,8 @@ var ctrl_1_animation:String = "Flair"
 func _init() -> void:
 	health = 1040
 	
+	add_to_group("player")
+	
 func _ready() -> void:
 	change_state(state.IDLE)
 	if not str(multiplayer.get_unique_id()) == self.name:
@@ -55,6 +57,7 @@ func _input(event: InputEvent) -> void:
 		if event.keycode == KEY_1 and event.ctrl_pressed:
 			#rpc_id(1, "input_request_ctrl_animation")
 			input_request_ctrl_animation.rpc_id(1)
+			change_state(state.CTRL_ANIMATION)
 			
 func _physics_process(delta: float) -> void:
 	#if not multiplayer.is_server():
@@ -178,8 +181,9 @@ func input_request_ctrl_animation():
 	change_state(state.CTRL_ANIMATION)
 	
 func _on_multiplayer_synchronizer_synchronized() -> void:
-	if self.position.distance_to(pos_server) > 4:
-		self.position = lerp(self.position, pos_server, 0.5)
+	if self.position.distance_to(pos_server) > 4.5:
+		#self.position = lerp(self.position, pos_server, 0.5)
+		self.position = pos_server
 		
 	if not multiplayer.is_server():
 		if current_state != curr_state_server:
