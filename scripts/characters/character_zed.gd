@@ -5,5 +5,5 @@ func _init() -> void:
 	walking_animation = "Zed_run_anm"
 	ctrl_1_animation = "Zed_channel_anm"
 	
-	speed = 25
-	health = 738
+	speed = 17
+	health = 594

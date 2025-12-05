@@ -1,7 +1,7 @@
 extends CharacterBody3D
 class_name Player
 
-var speed: int = 20
+var speed: int = 15
 var JUMP_VELOCITY: int = 10
 var health: int
 
@@ -29,7 +29,7 @@ var walking_animation: String = "Walking"
 var ctrl_1_animation:String = "Flair"
 
 func _init() -> void:
-	health = 1040
+	health = 856
 	
 	add_to_group("player")
 	
@@ -58,7 +58,7 @@ func _input(event: InputEvent) -> void:
 			#rpc_id(1, "input_request_ctrl_animation")
 			input_request_ctrl_animation.rpc_id(1)
 			change_state(state.CTRL_ANIMATION)
-			
+
 func _physics_process(delta: float) -> void:
 	#if not multiplayer.is_server():
 		#return
@@ -76,7 +76,6 @@ func _process(delta: float) -> void:
 		curr_state_server = current_state
 		#targ_pos_server = navigation_agent.target_position
 		
-		
 func get_world_pos():
 	var mouse_pos = get_viewport().get_mouse_position();
 	var ray_length = 180
@@ -90,10 +89,6 @@ func get_world_pos():
 	if result:
 		navigation_agent.target_position = result.position
 		input_request_move.rpc_id(1, result.position)
-		#print(result)
-		#print(navigation_agent.is_target_reachable())
-		#print(navigation_agent.distance_to_target())
-		#print('Intercepted')
 	#else:
 		#print('No intercepted')
 
@@ -181,6 +176,7 @@ func input_request_ctrl_animation():
 	change_state(state.CTRL_ANIMATION)
 	
 func _on_multiplayer_synchronizer_synchronized() -> void:
+	print(multiplayer.get_unique_id(), " ", self.name, " ", multiplayer.get_remote_sender_id())
 	if self.position.distance_to(pos_server) > 4.5:
 		#self.position = lerp(self.position, pos_server, 0.5)
 		self.position = pos_server

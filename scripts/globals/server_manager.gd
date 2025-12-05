@@ -13,14 +13,7 @@ const MAX_CONNECTIONS = 7
 @onready var line_edit:LineEdit = null #get_tree().root.get_node("multiplayer_lobby/VBoxContainer/LineEdit")
 
 var selection_screen = preload("res://scenes/selection_screen.tscn")
-# This will contain player info for every player,
-# with the keys being each player's unique IDs.
-#var players = {}
-# This is the local player info. This should be modified locally
-# before the connection is made. It will be passed to every other peer.
-# For example, the value of "name" can be set to something the player
-# entered in a UI scene.
-#var player_info = {"name": "Name"}
+
 var players_loaded = 0
 	
 func register_UI(_multiplayer_UI, _line_edit):

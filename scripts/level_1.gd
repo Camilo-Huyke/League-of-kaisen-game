@@ -5,7 +5,7 @@ extends Node3D
 @onready var spawn_points_list = []
 @onready var spawn_counter: int = 0
 
-var send_time = 0
+var send_time: int = 0
 
 func _ready() -> void:
 	if not multiplayer.is_server():

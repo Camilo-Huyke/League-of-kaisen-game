@@ -5,6 +5,6 @@ func _init() -> void:
 	walking_animation = "Yasuo_Skin09_Run1_anm"
 	ctrl_1_animation = "Joke"
 	
-	speed = 25
-	health = 870
+	speed = 17
+	health = 600
 	

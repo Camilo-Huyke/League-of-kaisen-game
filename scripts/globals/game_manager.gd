@@ -14,8 +14,6 @@ func register_level(_level: Node3D):
 	if not multiplayer.is_server():
 		return
 	level = _level
-	#for i in player_info.keys():
-		#level.add_child(player_info[i], true)
 		
 func register_player(id):
 	if not multiplayer.is_server() and not current_state == state.SELECTION:

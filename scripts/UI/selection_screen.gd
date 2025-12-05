@@ -2,6 +2,7 @@ extends Control
 
 @onready var character_selection_box = $VBoxContainer/HBoxContainer
 @onready var playerCharPath: String
+@onready var can_select: bool = true
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
@@ -18,6 +19,8 @@ func _get_char_node():
 			return node
 			
 func _set_char_selected(_charNode):
+	if not can_select:
+		return
 	playerCharPath = _charNode.character_path
 	for node in character_selection_box.get_children():
 		var isSelected = _charNode == node
@@ -25,4 +28,5 @@ func _set_char_selected(_charNode):
 	
 func _on_start_button_pressed() -> void:
 	if playerCharPath:
+		can_select = false
 		GameManager.register_character.rpc_id(1, playerCharPath)
