@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b6oeeluqjyof2"
+path.s3tc="res://.godot/imported/genesis_nightbringer_yasuo_Small_Spikes.png-3d29983ae92284899ea330af8a829c94.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "8773b7fb9d94775ffedbd9caba56bb7e"
+}
+
+[deps]
+
+source_file="res://assets/charachters/yasuo_2/genesis_nightbringer_yasuo_Small_Spikes.png"
+dest_files=["res://.godot/imported/genesis_nightbringer_yasuo_Small_Spikes.png-3d29983ae92284899ea330af8a829c94.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
